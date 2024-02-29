@@ -22,7 +22,7 @@ const BASE_URL = "http://localhost:8000";
 // }
 
 const initialState: CityState = {
-  cities: [],
+  cities: [], // citites.cityName = ["Madird", "Rome", "Moscow", "Paris"]
   isLoading: false,
   currentCity: null,
   error: "",

@@ -62,6 +62,7 @@ function Form() {
         }
 
         setEmoji(convertToEmoji(data.countryCode));
+        console.log(typeof data.countryCode)
 
         setCityName(data.city || data.locality || "");
         setCountry(data.countryName);

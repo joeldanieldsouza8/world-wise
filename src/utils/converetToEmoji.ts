@@ -1,7 +1,15 @@
+// export function convertToEmoji(countryCode: string) {
+//   const codePoints = countryCode
+//     .toUpperCase()
+//     .split("")
+//     .map((char, index) => 127397 + char.charCodeAt(index));
+//   return String.fromCodePoint(...codePoints);
+// }
+
 export function convertToEmoji(countryCode: string) {
   const codePoints = countryCode
     .toUpperCase()
     .split("")
-    .map((char, index) => 127397 + char.charCodeAt(index));
+    .map((char) => 127397 + char.charCodeAt(0));
   return String.fromCodePoint(...codePoints);
 }
